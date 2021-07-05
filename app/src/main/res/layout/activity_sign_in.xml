@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:background="#BC1C2B">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:id="@+id/signin1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_4"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/vector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="SIGN IN"
+        android:gravity="end"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <TextView
+        android:id="@+id/signinwlcm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Welcome back"
+        android:textColor="#BC1C2B"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/signincont"
+        app:layout_constraintTop_toTopOf="@+id/signin1" />
+
+    <TextView
+        android:id="@+id/signincont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinwlcm"
+        android:text="Continue to sign in!"
+        android:textSize="17sp"
+        android:textColor="#BC1C2B"
+
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:id="@+id/signInname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/signincont"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        />
+    <EditText
+        android:id="@+id/signinname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        app:layout_constraintTop_toBottomOf="@+id/signInname"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="15dp"
+        android:background="#F5F5F5"
+        android:padding="20dp"/>
+    <TextView
+        android:id="@+id/signInpswrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/signinname"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Password"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        />
+    <EditText
+        android:id="@+id/signinpswrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the password"
+        app:layout_constraintTop_toBottomOf="@+id/signInpswrd"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="15dp"
+        android:background="#F5F5F5"
+        android:padding="20dp"/>
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="17sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:text="Forgot Password?"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="#BC1C2B"
+        app:layout_constraintTop_toBottomOf="@+id/signinpswrd"
+        />
+    <ImageView
+        android:id="@+id/signinimage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forget"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@+id/signinimage2"
+        app:layout_constraintEnd_toEndOf="@+id/signinimage2"
+        app:layout_constraintBottom_toBottomOf="@+id/signinimage2"
+        app:layout_constraintTop_toTopOf="@+id/signinimage2"
+        android:text="Sign In"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"/>
+    <TextView
+        android:id="@+id/nouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signin"
+        android:layout_marginTop="10dp"
+        android:hint="Don't have an account?"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_medium"/>
+    <TextView
+        android:id="@+id/signupin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nouse"
+        android:layout_marginTop="10dp"
+        android:text="Sign up"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:textColor="#BC1C2B"
+        android:textSize="15sp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
